@@ -2,8 +2,7 @@ cask "wattmate" do
   version "1.3.1"
   sha256 "1709daeebd282687a652e15126dac81459c76892b5a3b135b35351eccede8360"
 
-  url "https://wattmateapp.com/download/WattMate-#{version}.dmg",
-      verified: "wattmateapp.com/download/"
+  url "https://wattmateapp.com/download/WattMate-#{version}.dmg"
   name "WattMate"
   desc "Menu bar monitor showing battery use per app and minutes saved by quitting"
   homepage "https://wattmateapp.com/"
