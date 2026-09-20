@@ -5,7 +5,7 @@ using your Mac's battery, in watts, and how many minutes you get back by quittin
 macOS 14 or later, Apple silicon.
 
 ```sh
-brew install --cask vstarodubov/wattmate/wattmate
+brew install --cask wattmateapp/wattmate/wattmate
 ```
 
 The cask downloads the signed and notarized disk image from
