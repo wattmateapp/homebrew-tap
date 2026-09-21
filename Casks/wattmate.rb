@@ -1,6 +1,6 @@
 cask "wattmate" do
-  version "1.3.1"
-  sha256 "1709daeebd282687a652e15126dac81459c76892b5a3b135b35351eccede8360"
+  version "1.4"
+  sha256 "1060c1fa004ff83756c56dcdd5a264b0928e92769b6a59adea0c4c61349a3e7f"
 
   url "https://wattmateapp.com/download/WattMate-#{version}.dmg"
   name "WattMate"
