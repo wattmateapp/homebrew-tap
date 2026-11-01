@@ -1,6 +1,6 @@
 cask "wattmate" do
-  version "1.5"
-  sha256 "7f3b0a2013b2942d59a5b043903854db7e7c097914438c325756d96bc3ef5c29"
+  version "1.6"
+  sha256 "8b8788d7ddb66df84f385b93e9d58fe0637a3e85c0491a9d68ce51d97144e952"
 
   url "https://wattmateapp.com/download/WattMate-#{version}.dmg"
   name "WattMate"
@@ -9,9 +9,9 @@ cask "wattmate" do
 
   livecheck do
     url "https://wattmateapp.com/appcast.xml"
-    # Appcast несёт и номер сборки (sparkle:version = 12), и версию
-    # (shortVersionString = 1.3.1); без этой строки livecheck печатает
-    # «1.3.1 ==> 1.3.1,12» и считает формулу устаревшей на каждом прогоне.
+    # The appcast carries both the build number (sparkle:version) and the version
+    # (shortVersionString); without this line livecheck prints "1.6 ==> 1.6,15"
+    # and reports the cask as outdated on every run.
     strategy :sparkle, &:short_version
   end
 
