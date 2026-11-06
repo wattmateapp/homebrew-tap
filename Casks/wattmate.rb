@@ -1,6 +1,6 @@
 cask "wattmate" do
-  version "1.6"
-  sha256 "8b8788d7ddb66df84f385b93e9d58fe0637a3e85c0491a9d68ce51d97144e952"
+  version "1.7"
+  sha256 "22c2a08a693c2f14ed6c45ab61348d9f332c9dc5d75811fc76158268775ce089"
 
   url "https://wattmateapp.com/download/WattMate-#{version}.dmg"
   name "WattMate"
@@ -10,7 +10,7 @@ cask "wattmate" do
   livecheck do
     url "https://wattmateapp.com/appcast.xml"
     # The appcast carries both the build number (sparkle:version) and the version
-    # (shortVersionString); without this line livecheck prints "1.6 ==> 1.6,15"
+    # (shortVersionString); without this line livecheck prints "1.7 ==> 1.7,16"
     # and reports the cask as outdated on every run.
     strategy :sparkle, &:short_version
   end
